@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Screening Test App</string>
+    <string name="input_name">Masukkan Nama</string>
+    <string name="next">Next</string>
+    <string name="your_name">Ahmad Sufyan</string>
+    <string name="event">Pilih Event</string>
+    <string name="guest">Pilih Guest</string>
+    <string name="image_event">Image Event</string>
+    <string name="event_name">Nama event</string>
+    <string name="event_date">12 Mei 2021</string>
+</resources>
