@@ -14,6 +14,7 @@ import com.fyndev.screeningtestapp.utils.EVENT_NAME
 import com.fyndev.screeningtestapp.utils.EXTRA_NAME
 import com.fyndev.screeningtestapp.utils.GUEST_BIRTHDATE
 import com.fyndev.screeningtestapp.utils.GUEST_NAME
+import kotlin.math.sqrt
 
 class ChooseActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
@@ -63,6 +64,21 @@ class ChooseActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "feature phone", Toast.LENGTH_LONG).show()
             }
+
+            if (isPrime(birthDate[1].toInt())) {
+                Toast.makeText(this, "is prime", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this, "not prime", Toast.LENGTH_LONG).show()
+            }
         }
+    }
+
+    private fun isPrime(number: Int): Boolean {
+        if (number > 1) {
+            for (i in 2..sqrt(number.toDouble()).toInt()) {
+                if (number % i == 0) return false
+            }
+            return true
+        } else return false
     }
 }

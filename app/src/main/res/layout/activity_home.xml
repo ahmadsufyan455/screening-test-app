@@ -1,35 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_validation"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ui.HomeActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:gravity="center_horizontal"
+        android:text="@string/set_profile"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/add_photo"
+        android:src="@drawable/btn_add_photo" />
+
+    <EditText
+        android:id="@+id/ed_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/text_field"
         android:hint="@string/input_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="Autofill" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_input_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_next"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/next" />
+        android:layout_height="65dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/btn_signup_normal"
+        android:text="@string/end"
+        android:textColor="@color/white" />
 
 </LinearLayout>

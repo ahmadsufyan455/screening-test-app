@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fyndev.screeningtestapp.R
 import com.fyndev.screeningtestapp.utils.EXTRA_NAME
+import kotlin.math.sqrt
 
 class GuestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

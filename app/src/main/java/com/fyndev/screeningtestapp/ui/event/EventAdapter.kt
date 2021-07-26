@@ -39,11 +39,13 @@ class EventAdapter(private val name: String) : RecyclerView.Adapter<EventAdapter
         private val imgEvent = view.findViewById<ImageView>(R.id.img_event)
         private val eventName = view.findViewById<TextView>(R.id.tv_event_name)
         private val eventDate = view.findViewById<TextView>(R.id.tv_event_date)
+        private val eventDesc = view.findViewById<TextView>(R.id.tv_desc)
 
         fun bind(event: Event, name: String) {
             imgEvent.setImageResource(event.image)
             eventName.text = event.name
             eventDate.text = event.date
+            eventDesc.text = event.desc
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, ChooseActivity::class.java).apply {
                     putExtra(EVENT_NAME, event.name)

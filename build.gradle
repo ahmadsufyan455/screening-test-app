@@ -1,5 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    ext.mapbox_version = "9.2.0"
+    ext.mapbox_annotation_version = "0.8.0"
     ext.kotlin_version = "1.5.20"
     repositories {
         google()

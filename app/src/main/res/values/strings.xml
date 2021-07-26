@@ -8,4 +8,11 @@
     <string name="image_event">Image Event</string>
     <string name="event_name">Nama event</string>
     <string name="event_date">12 Mei 2021</string>
+    <string name="end">Selesai</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="set_profile">Sertakan gambar profil Anda Untuk melengkapi profil.</string>
+    <string name="add_photo">Tambah foto</string>
+    <string name="add_maps">Add Maps</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWhtYWRzdWZ5YW41MTQiLCJhIjoiY2tyanlzbmEyMDFndTMxcm02OWV3ZTR2dCJ9.7V8hA_1L_IclHZ2Z-GnBzg</string>
 </resources>

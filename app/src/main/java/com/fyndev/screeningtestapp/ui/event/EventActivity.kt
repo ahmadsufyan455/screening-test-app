@@ -1,11 +1,15 @@
 package com.fyndev.screeningtestapp.ui.event
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fyndev.screeningtestapp.R
+import com.fyndev.screeningtestapp.ui.maps.MapsActivity
 import com.fyndev.screeningtestapp.utils.EXTRA_NAME
 
 class EventActivity : AppCompatActivity() {
@@ -28,5 +32,18 @@ class EventActivity : AppCompatActivity() {
             setHasFixedSize(true)
             adapter = eventAdapter
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.event_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_add) {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
